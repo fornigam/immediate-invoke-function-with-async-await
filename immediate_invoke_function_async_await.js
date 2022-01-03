@@ -1,7 +1,7 @@
 const fs = require("fs");
 const readOne = (fileName) => {
   return new Promise((resolve, reject) => {
-    fs.readFile(`./data/${fileName}`, (err, res) => {
+    fs.readFile(`./${fileName}`, (err, res) => {
       if (err) {
         // throw new Error("Error occurred during file reading");
         console.error("Error occurred during file reading");
